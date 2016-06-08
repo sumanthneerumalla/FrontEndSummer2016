@@ -1,7 +1,7 @@
 <html>
 <head><Title>Chapter 4: Links to here and beyond</Title></head>
 <body>
-    <h1>LInking to other sites</h1>
+    <h1 id="Absolute URLS">LInking to other sites</h1>
     <p>Links are created using the a element, which has an attribute called href. I dont know what it means but it holds a quote of the link that we want to point to. Here are some websites that i use frequently:</p>
     <ol>
         <li><a href="http://google.com">Google</a> </li>
@@ -11,7 +11,7 @@
     </ol>
 
 
-    <h1>Linking to other pages on the same site</h1>
+    <h1 id="Relative URLS">Linking to other pages on the same site</h1>
     <p>The previous links were given using their absolute urls. It is also possible to link to pages using relative urls.Here's a link to another page in this same directory: <a href="Links2.html">Links2</a> It is however, possible to also link to page in parent and child directories using relative file location descriptors</p>
     <ol>
         <li><a href="../index.html">Index Page</a> </li>
@@ -22,7 +22,14 @@
     </ol>
     <p>When linking to the same file from different relative locations on the website it is necessary to write two different urls</p>
 
+    <h1 id="Email Links">Email links</h1>
+    <p>Its possible to create mail links by using the a tag and an href atribute. In order to make it different from a regular link however, you have to start the href attribute with a "mailto:". You can try clicking the following link to email github support: <a href="mailto:support@github.coom">github support</a>.Be forewarned that I haven't verified whether that is a valid email. It was only meant to illustrate a point.</p>
 
+    <h1>Opening links in a new window</h1>
+
+    <p> You can open a link ina new window by adding another attribute to the 'a' element. <a href="Links2.html" target="_blank">This</a> link opens the Links2 page in a new window.</p>
+
+    <h1></h1>
 
 </body>
 </html>
