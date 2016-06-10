@@ -3,14 +3,32 @@
 <body>
 <h1>Adding images</h1>
 <p>Images can be added by using the img tag with a src attribute. The src attribute can have a relative or absolute url. images also have an alt attribute which often contains a text description of what the image contains. The title attribute is used within the img element  to provide additional information about the image. Putting the mouse above the picture gives shows the content of the title attribute to the user</p>
-<img src="StefanJanoskis.jpg" alt="This ia a picture of some shoes I saw and wanted to buy recently" title="Anthony Janoski Daily Wear Shoes" >
+<img src="Janoskis.jpg" alt="This ia a picture of some shoes I saw and wanted to buy recently" title="Stefan Janoski Daily Wear Shoes" >
 
 <h1>Image dimensions</h1>
-<img src="StefanJanoskis.jpg" alt="Here lies a distorted picture" title="This image has dimensions that are meant to make it look distorted, to demonstrate the dangers of using html attributes with wanton ." width="100" height="500">
+<img src="Janoskis.jpg" alt="Here lies a distorted picture" title="This image has dimensions that are meant to make it look distorted, to demonstrate the dangers of using html attributes with wanton ." width="100" height="500">
 <p>This image has dimensions that are meant to make it look distorted</p>
 
 <h1>Stuff that was covered in this chapter but will not be demonstrated</h1>
 <p>It is possible to put images before paragraphs, inside the start of a paragraph and in the middle of a paragraph to achieve varying results of where the image is depicted in the webpage.Browsers display elements in two ways, as block elements which alwyas appaear in new lines (These would include the header and paragraph tags), and as inline elements ( Examples of which are the bold, emphasis, and image elements) Block and inline elements will be discussed later in greater depth in this textbook. There is also some content regarding the alignment attribute that was commonly used, but has now been deprecated as of html5 so we will not be discussion nor demonstrating it. Alignment of text and images will be covered in the CSS chapters of this book.</p>
 
+<h1>Figures and Figure Captions</h1>
+<p>Html5 introduced a new 'figure' element to contain images and their captions so that the two are associated.</p>
+
+<figure id="bottom">
+    <img src="PositiveQualitiesSkeletor.jpg" alt="A Skeletor Meme" title="Today I reflect on my positive qualities" />
+
+    <figcaption>Caption: This is meme that I'm a fan of</figcaption>
+</figure>
+
+<p>It is also possible to include more than one image inside the figure element as long as they all share the same caption. Kind of like a gallery</p>
+
+
+<figure>
+    <img src="YouMatterSkeletor.jpg" title="You matter" />
+    <img src="AccomplishmentsSkeletor.jpg" title="Take some time today to see how far you've come">
+    <img src="RecognizeSkeletor.jpg">
+    <figcaption>More positive skeletor memes</figcaption>
+</figure>
 </body>
 </html>
