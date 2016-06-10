@@ -4,7 +4,7 @@
 <h1 id="Basic Structure">Basic Table Structure</h1>
 <p> The 'table' element is used to create a table, and the contents of the table are written out row by row by using td elements nested inside of tr elements. The following table represents a tic-tac-toe game where the rules for taking turns have been ignored. </p>
 
-<table>
+<table border="1">
     <tr>
         <td>O</td>
         <td>X</td>
@@ -29,7 +29,7 @@
 <h1 id="Table headings">Table headings</h1>
 <p>The 'th' element is used like the 'td' element except its used to represent the headings for columns or rows. Its important to use empty 'th' elements in order to represent empty cells otherwise the table wont display properly. The scope attribute is used to determine whether the heading is for a row or a column. Since i'd just like to move on from this chapter i'll just be copying a table from the textbook.</p>
 
-<table>
+<table border="1">
     <tr>
         <th></th>
         <th scope="col">Saturday</th>
@@ -48,7 +48,7 @@
 </table>
 
 <p>Notice how the above table looks when it doesn't have an empty th element in the beginning</p>
-<table>
+<table border="1">
     <tr>
         <th scope="col">Saturday</th>
         <th scope="col">Sunday</th>
@@ -64,10 +64,10 @@
         <th>$675</th>
     </tr>
 </table>
-
+<hr>
 <h1 id="Spanning Columns and Rows">Spanning Columns and Rows</h1>
 <p>Sometimes entries in a table need to be stretched acros more than one column or row. The colspan and rowspand attributes can be used on th or td elements to indicate how many columns or rows it needs to run across.</p>
-<table>
+<table border="1">
     <thead><tr>
         <th></th>
         <th>9am</th>
