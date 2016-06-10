@@ -1,0 +1,103 @@
+<html>
+<head><title>Chapter 6 : Tables</title></head>
+<body>
+<h1 id="Basic Structure">Basic Table Structure</h1>
+<p> The 'table' element is used to create a table, and the contents of the table are written out row by row by using td elements nested inside of tr elements. The following table represents a tic-tac-toe game where the rules for taking turns have been ignored. </p>
+
+<table>
+    <tr>
+        <td>O</td>
+        <td>X</td>
+        <td>O</td>
+    </tr>
+    <tr>
+        <td>X</td>
+        <td>X</td>
+        <td>O</td>
+    </tr>
+    <tr>
+        <td>O</td>
+        <td>X</td>
+        <td>X</td>
+    </tr>
+
+    <h1>Table headings</h1>
+    <p></p>
+</table>
+
+<hr>
+<h1 id="Table headings">Table headings</h1>
+<p>The 'th' element is used like the 'td' element except its used to represent the headings for columns or rows. Its important to use empty 'th' elements in order to represent empty cells otherwise the table wont display properly. The scope attribute is used to determine whether the heading is for a row or a column. Since i'd just like to move on from this chapter i'll just be copying a table from the textbook.</p>
+
+<table>
+    <tr>
+        <th></th>
+        <th scope="col">Saturday</th>
+        <th scope="col">Sunday</th>
+    </tr>
+    <tr>
+        <th scope="row">Tickets Sold: </th>
+        <th>120</th>
+        <th>135</th>
+    </tr>
+    <tr>
+        <th scope="row">Total Sales</th>
+        <th>$600</th>
+        <th>$675</th>
+    </tr>
+</table>
+
+<p>Notice how the above table looks when it doesn't have an empty th element in the beginning</p>
+<table>
+    <tr>
+        <th scope="col">Saturday</th>
+        <th scope="col">Sunday</th>
+    </tr>
+    <tr>
+        <th scope="row">Tickets Sold: </th>
+        <th>120</th>
+        <th>135</th>
+    </tr>
+    <tr>
+        <th scope="row">Total Sales</th>
+        <th>$600</th>
+        <th>$675</th>
+    </tr>
+</table>
+
+<h1 id="Spanning Columns and Rows">Spanning Columns and Rows</h1>
+<p>Sometimes entries in a table need to be stretched acros more than one column or row. The colspan and rowspand attributes can be used on th or td elements to indicate how many columns or rows it needs to run across.</p>
+<table>
+    <thead><tr>
+        <th></th>
+        <th>9am</th>
+        <th>10am</th>
+        <th>11am</th>
+        <th>12pm</th>
+    </tr></thead>
+   <tbody> <tr>
+        <th scope="row">Monday</th>
+        <td colspan="2">Geography</td>
+        <td>Math</td>
+        <td>Art</td>
+    </tr>
+    <tr>
+        <th>Tuesday</th>
+        <td colspan="3">Gym</td>
+        <td>Home Ec</td>
+    </tr>
+    <tr>
+        <th>Wednesday</th>
+        <td rowspan="2" colspan="4">No School</td>
+
+    </tr>
+    <tr>
+        <th>Thursday</th>
+    </tr>
+    </tbody>
+    <tfoot><td colspan="5">Table footer content would be located here</td></tfoot>
+</table>
+
+<p>The previous table also segments out the content of the table into 'thead','tbody', and 'tfoot', so that they can be used with CSS later</p>
+</body>
+</html>
