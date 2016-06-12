@@ -7,12 +7,35 @@
     <h1>Input tags</h1>
     <p> The input element is used to create several different form controls. The type attribute specifies which type of input form will be displayed and the name attribute defines the name of the value that is sent to the server when the data is submitted. The size attribute determines the number of character spaces to be shown and the maxlength attribute limits the number of characters a user can enter into the filled.</p>
 
-    <h1>Sample form</h1>
+    <h1 id="Text">Sample form</h1>
     <form action="http://www.example.com/subscribe.php" method="get">
         <p>Email address:
             <input type="text" name="username" size="15" maxlength="30" />
         </p>
     </form>
+
+    <h1 id="Password">Password Input</h1>
+    <p>Making the input tag with the type attribute set to 'password' will make the text that is entered into the field to look like a password field</p>
+    <form action="http://www.example.com/login.php">
+          <p>Username:
+          <input type="text" name="username" size="15" maxlength="30">
+          </p>
+    <p>
+        Password:
+        <input type="password" name="password" size="15" maxlength="30">
+    </p>
+    </form>
+
+    <h1 id="Text Area"> Text area input</h1>
+    <p> The text area element is used to create multiline text input. Unline other elements this is not an empty element so it should have both an opening and closing tag. Text between the tag will apear in the box when the page loads and dissappears once the user starts typing. If the user doesn't remove the text between the tags then it will get sent along with whatever they typed. Witht the use of javascript, his text can be automatically removed once the user starts typing. Lastly, the cols and rows attributes can be used in this element to specify how large the text box should be, although the task is handled by CSS in modern sites</p>
+    <form action="http://www.sample.com/submit.php">
+    <p><b>What do you think of this webpage so far?</b></p>
+    <textarea name="comments" cols="100" rows="10">Enter your comments here ....</textarea>
+
+    </form>
+
+    <h1></h1>
+
 
 
 
