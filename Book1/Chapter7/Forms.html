@@ -80,9 +80,26 @@
     <h1>Multiple select box</h1>
     <p>Im skipping the example on this because i hate these things. The size attribute defines how many options to show at once and the multiple="multiple" attribute condition allow users to select more than one optoin.</p>
 
-    <h1>File input</h1>
-    <p> </p>
+    <h1>File input and the submit button</h1>
+    <p> Setting the input type attribute to "file" will make a box that looks like a text input followed by a browse button. When a user clicks that button they will be directed to choose a file from their computer to upload. When using this form of input the method must be set to "post" or the upload will not work. Files can only be uploaded via the post method. In the below example there is also a submit input type that lets the user submit the information that they put into the form so far</p>
 
+    <form action="http://www.example.org/profileUpload.php" method="post">
+        <p>Please select a profile picture</p>
+        <input type="file" name="userProfile"/><br />
+        <input type="submit" value="Upload Profile Picture"/>
+
+    </form>
+
+    <h1>Image button</h1>
+    <p>It is possible to use an image for the submit button.</p>
+
+    <form action="http://www.example.org/profileUpload.php">
+        <input type="text" name="email" />
+        <input type="image" src="http://www.clker.com/cliparts/v/j/j/k/U/s/red-submit-button-md.png" width="100" height="30"/>
+    </form>
+
+    <h1> Button and hidden controls</h1>
+    <p>The button element allows you to combine text and images. Hidden inut fields allow you to add values to forms that users cannot see but can use when navigating the site. For example a web page miht use a hidden field to indicate which page the user was on when they submitted a form.</p>
 
     </body>
 </html>
