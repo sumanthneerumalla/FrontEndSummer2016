@@ -1,105 +1,184 @@
 <html>
-    <head><title>Forms</title></head>
-    <body>
-    <h1 id="Form Structure">Form Structure</h1>
-    <p>Form controls live inside a 'form' element and always carries the action attribute. The action attributes value is a url for the page on the server that will recieve the form information. The method attribute will specify whether the form will be sent as a get or a post . With a get method, the values in the form are added to the end of the action url. It is idea for short forms and retrieving data. The post method sends values in teh http headers. The post method should be used when users upload a file, submit sensitive data, submit a large amount of data or adds/deletes information from a database. Browsers use the get method by default. </p>
+<head><title>Forms</title></head>
+<body>
+<h1 id="Form Structure">Form Structure</h1>
+<p>Form controls live inside a 'form' element and always carries the action attribute. The action attributes value is a url for the page on the server that will recieve the form information. The method attribute will specify whether the form will be sent as a get or a post . With a get method, the values in the form are added to the end of the action url. It is idea for short forms and retrieving data. The post method sends values in teh http headers. The post method should be used when users upload a file, submit sensitive data, submit a large amount of data or adds/deletes information from a database. Browsers use the get method by default. </p>
 
-    <h1>Input tags</h1>
-    <p> The input element is used to create several different form controls. The type attribute specifies which type of input form will be displayed and the name attribute defines the name of the value that is sent to the server when the data is submitted. The size attribute determines the number of character spaces to be shown and the maxlength attribute limits the number of characters a user can enter into the filled.</p>
+<h1>Input tags</h1>
+<p> The input element is used to create several different form controls. The type attribute specifies which type of input form will be displayed and the name attribute defines the name of the value that is sent to the server when the data is submitted. The size attribute determines the number of character spaces to be shown and the maxlength attribute limits the number of characters a user can enter into the filled.</p>
 
-    <h1 id="Text">Sample form</h1>
-    <form action="http://www.example.com/subscribe.php" method="get">
-        <p>Email address:
-            <input type="text" name="username" size="15" maxlength="30" />
-        </p>
-    </form>
+<h1 id="Text">Sample form</h1>
+<form action="http://www.example.com/subscribe.php" method="get">
+    <p>Email address:
+        <input type="text" name="username" size="15" maxlength="30" />
+    </p>
+</form>
 
-    <h1 id="Password">Password Input</h1>
-    <p>Making the input tag with the type attribute set to 'password' will make the text that is entered into the field to look like a password field</p>
-    <form action="http://www.example.com/login.php">
-          <p>Username:
-          <input type="text" name="username" size="15" maxlength="30">
-          </p>
+<h1 id="Password">Password Input</h1>
+<p>Making the input tag with the type attribute set to 'password' will make the text that is entered into the field to look like a password field</p>
+<form action="http://www.example.com/login.php">
+    <p>Username:
+        <input type="text" name="username" size="15" maxlength="30">
+    </p>
     <p>
         Password:
         <input type="password" name="password" size="15" maxlength="30">
     </p>
-    </form>
+</form>
 
-    <h1 id="Text Area"> Text area input</h1>
-    <p> The text area element is used to create multiline text input. Unline other elements this is not an empty element so it should have both an opening and closing tag. Text between the tag will apear in the box when the page loads and dissappears once the user starts typing. If the user doesn't remove the text between the tags then it will get sent along with whatever they typed. Witht the use of javascript, his text can be automatically removed once the user starts typing. Lastly, the cols and rows attributes can be used in this element to specify how large the text box should be, although the task is handled by CSS in modern sites</p>
-    <form action="http://www.sample.com/submit.php">
+<h1 id="Text Area"> Text area input</h1>
+<p> The text area element is used to create multiline text input. Unline other elements this is not an empty element so it should have both an opening and closing tag. Text between the tag will apear in the box when the page loads and dissappears once the user starts typing. If the user doesn't remove the text between the tags then it will get sent along with whatever they typed. Witht the use of javascript, his text can be automatically removed once the user starts typing. Lastly, the cols and rows attributes can be used in this element to specify how large the text box should be, although the task is handled by CSS in modern sites</p>
+<form action="http://www.sample.com/submit.php">
     <p><b>What do you think of this webpage so far?</b></p>
     <textarea name="comments" cols="100" rows="10">Enter your comments here ....</textarea>
 
-    </form>
+</form>
 
-    <h1>Radio buttons</h1>
-    <p>Radio buttons  allow users to pick just one of a number of opttions</p>
+<h1>Radio buttons</h1>
+<p>Radio buttons  allow users to pick just one of a number of opttions</p>
 
-    <form action="http://www.sample.com/submit.php">
+<form action="http://www.sample.com/submit.php">
     <p>Please select your favorite TV Show: </p>
+    <br />
+    <input type="radio" name="Favorite" value="Breaking Bad" checked="checked"/> Breaking Bad
+    <input type="radio" name="Favorite" value="Peaky Blinders" /> Peaky Blinders
+    <input type="radio" name="Favorite" value="Bobs Burgers" /> Bobs Burgers
+    <input type="radio" name="Favorite" value="Narcos" /> Narcos
+    <input type="radio" name="Favorite" value="Silicon Valley" /> Silicon Valley
+
+</form>
+
+<h1>Check Boxes</h1>
+<p>Setting the type attribute to "checbox" allows users to select and deselect more than one option. The other two attributes are the same as the radio button ones.</p>
+<form action="http://www.sample.com/submit.php">
+    <p><em>Please select your medical conditions:</em>
         <br />
-        <input type="radio" name="Favorite" value="Breaking Bad" checked="checked"/> Breaking Bad
-        <input type="radio" name="Favorite" value="Peaky Blinders" /> Peaky Blinders
-        <input type="radio" name="Favorite" value="Bobs Burgers" /> Bobs Burgers
-        <input type="radio" name="Favorite" value="Narcos" /> Narcos
-        <input type="radio" name="Favorite" value="Silicon Valley" /> Silicon Valley
-
-    </form>
-
-    <h1>Check Boxes</h1>
-    <p>Setting the type attribute to "checbox" allows users to select and deselect more than one option. The other two attributes are the same as the radio button ones.</p>
-    <form action="http://www.sample.com/submit.php">
-        <p><em>Please select your medical conditions:</em>
-        <br />
-            <input type="checkbox" name="ailments" value="GlassBones" checked="checked" />Glass Bones
-            <input type="checkbox" name="ailments" value="PaperSkin" checked="checked" />Paper Skin
-            <input type="checkbox" name="ailments" value="HeartAttacks" checked="checked" />Heart Attacks that put me to sleep at night
-            <input type="checkbox" name="ailments" value="WeakKnees" />Weak Knees
-            <input type="checkbox" name="ailments" value="HeavyArms" />Heavy Arms
-            <input type="checkbox" name="ailments" value="MomsSpaghetti" />Moms Spaghetti
-            </p>
-        </form>
+        <input type="checkbox" name="ailments" value="GlassBones" checked="checked" />Glass Bones
+        <input type="checkbox" name="ailments" value="PaperSkin" checked="checked" />Paper Skin
+        <input type="checkbox" name="ailments" value="HeartAttacks" checked="checked" />Heart Attacks that put me to sleep at night
+        <input type="checkbox" name="ailments" value="WeakKnees" />Weak Knees
+        <input type="checkbox" name="ailments" value="HeavyArms" />Heavy Arms
+        <input type="checkbox" name="ailments" value="MomsSpaghetti" />Moms Spaghetti
+    </p>
+</form>
 
 
-    <h1>Drop down lists</h1>
-    <p>After declaring the form opening tag it is possible to create a drop down list by opening a select tag the attribute "name" set to what you want to call the data and listing the options between the select opening and closing tags. The value of each option can be set by the value attribute and the text that will be shown to the user as an option is inserted  between the closing and opening option tags.</p>
+<h1>Drop down lists</h1>
+<p>After declaring the form opening tag it is possible to create a drop down list by opening a select tag the attribute "name" set to what you want to call the data and listing the options between the select opening and closing tags. The value of each option can be set by the value attribute and the text that will be shown to the user as an option is inserted  between the closing and opening option tags.</p>
 
-    <form action="http://www.example.org/WhyAmIStillUsingPHP.php">
-        <p>There's always money in the banana stand....but how much really?</p>
-        <select name="numBananas">
-            <option value="100">$100</option>
-            <option value="2000">$2000</option>
-            <option value="0.000005">$0.00005</option>
-            <option value="100,000">$100,000</option>
-            <!--I could be wrong with the options here. I haven't seen the show in a long time. If anyone ever actually reads and has a fix this please submit a pull request with the correct option-->
-        </select>
-    </form>
+<form action="http://www.example.org/WhyAmIStillUsingPHP.php">
+    <p>There's always money in the banana stand....but how much really?</p>
+    <select name="numBananas">
+        <option value="100">$100</option>
+        <option value="2000">$2000</option>
+        <option value="0.000005">$0.00005</option>
+        <option value="100,000">$100,000</option>
+        <!--I could be wrong with the options here. I haven't seen the show in a long time. If anyone ever actually reads and has a fix this please submit a pull request with the correct option-->
+    </select>
+</form>
 
-    <h1>Multiple select box</h1>
-    <p>Im skipping the example on this because i hate these things. The size attribute defines how many options to show at once and the multiple="multiple" attribute condition allow users to select more than one optoin.</p>
+<h1>Multiple select box</h1>
+<p>Im skipping the example on this because i hate these things. The size attribute defines how many options to show at once and the multiple="multiple" attribute condition allow users to select more than one optoin.</p>
 
-    <h1>File input and the submit button</h1>
-    <p> Setting the input type attribute to "file" will make a box that looks like a text input followed by a browse button. When a user clicks that button they will be directed to choose a file from their computer to upload. When using this form of input the method must be set to "post" or the upload will not work. Files can only be uploaded via the post method. In the below example there is also a submit input type that lets the user submit the information that they put into the form so far</p>
+<h1>File input and the submit button</h1>
+<p> Setting the input type attribute to "file" will make a box that looks like a text input followed by a browse button. When a user clicks that button they will be directed to choose a file from their computer to upload. When using this form of input the method must be set to "post" or the upload will not work. Files can only be uploaded via the post method. In the below example there is also a submit input type that lets the user submit the information that they put into the form so far</p>
 
-    <form action="http://www.example.org/profileUpload.php" method="post">
-        <p>Please select a profile picture</p>
-        <input type="file" name="userProfile"/><br />
-        <input type="submit" value="Upload Profile Picture"/>
+<form action="http://www.example.org/profileUpload.php" method="post">
+    <p>Please select a profile picture</p>
+    <input type="file" name="userProfile"/><br />
+    <input type="submit" value="Upload Profile Picture"/>
 
-    </form>
+</form>
 
-    <h1>Image button</h1>
-    <p>It is possible to use an image for the submit button.</p>
+<h1>Image button</h1>
+<p>It is possible to use an image for the submit button.</p>
 
-    <form action="http://www.example.org/profileUpload.php">
-        <input type="text" name="email" />
-        <input type="image" src="http://www.clker.com/cliparts/v/j/j/k/U/s/red-submit-button-md.png" width="100" height="30"/>
-    </form>
+<form action="http://www.example.org/profileUpload.php">
+    <input type="text" name="email" />
+    <input type="image" src="http://www.clker.com/cliparts/v/j/j/k/U/s/red-submit-button-md.png" width="100" height="30"/>
+</form>
 
-    <h1> Button and hidden controls</h1>
-    <p>The button element allows you to combine text and images. Hidden inut fields allow you to add values to forms that users cannot see but can use when navigating the site. For example a web page miht use a hidden field to indicate which page the user was on when they submitted a form.</p>
+<h1> Button and hidden controls</h1>
+<p>The button element allows you to combine text and images. Hidden inut fields allow you to add values to forms that users cannot see but can use when navigating the site. For example a web page miht use a hidden field to indicate which page the user was on when they submitted a form.</p>
 
-    </body>
+<form action="http://www.examle.org/add.php">
+    <button>
+        <img src="http://www.clker.com/cliparts/v/j/j/k/U/s/red-submit-button-md.png" alt="add" width="10" height="10" />
+        Add
+    </button>
+
+    <button>
+        <img src="http://www.htmlandcssbook.com/code-samples/chapter-07/images/add.gif" alt="add" width="10" height="10" />
+        Add
+    </button>
+    <input type="hidden" name="bookmark" value="FormsPage">
+</form>
+
+<h1>Labellng Form Controls</h1>
+<p>Each form control should actually have its own 'label' element in order to make the form accessible to vision impaired users it can be used in to ways:<br> 1.Wrap around both the text description and the form input(age fields) <br> 2. Be kept separate from the form control and use the for attriute to indicate which form control it is a label for ( radio buttons)<br> The 'for' attribute states which form control the label belongs to. The for attribute should be set equal to the id of the input it is meant to match. If you use labels and match them to specific input ids, users will be able to click on either the form control <b>or</b> the label in order to select. The larger clickable area makes the form easier to use. </p>
+
+<label>Age:<input type="text" name="age"/> </label><br />
+Gender:
+<input id="female" type="radio" name="gender" value="f">
+<label for="female">Female</label>
+<input id="male" type="radio" name="gender" value="m">
+<label for="male"> Male</label>
+
+<h1>Grouping form elements</h1>
+<p>You can group related formelements by using the 'fieldset' element. Inserting a 'legend' element directly after the opeining fieldset tag will give the user a caption that helps to identify the purpose of that group of form controls</p>
+<form action="http://www.example.com/subscribe.php">
+    <fieldset>
+        <legend>Contact details</legend>
+        <label>Email:<br><input type="text" name="email"></label><br>
+        <label>Mobile:<br><input type="text" name="mobile"></label><br>
+        <label>Telephone:<br><input type="text" name="telephone"></label>
+    </fieldset>
+
+</form>
+
+<h1>HTML5 Form validation</h1>
+<p>Form validation has typically been accomplished with javasript but html5 standards let you do it in html and have the browser be in charge of implementing it. This lreduces work on your end and can be faster than if validation was performed on the server. It is easily done by adding the "required' attribute and setting equal to the value of 'required'</p>
+
+<form action="http://www.example.com/login/" method="post">
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" required="required" /><br />
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required="required" />
+    <input type="submit" value="submit">
+</form>
+
+<h1>HTML5 Date input</h1>
+<p>Setting the input type attribute to 'date' will allow the user to input a date. Older browsers just display this as an empty text field</p>
+
+<form action="http://www.example.com/date.php" method="post">
+    <label>Departure Date(mm/dd/yyyy)   <input type="date" name="depart"></label>
+    <input type="submit" value="Submit">
+</form>
+
+<h1>HTML5 Email/Url input</h1>
+<p>Setting the type to 'email will ask the user to input an email. The browswer automatically validates input, with some smartphones automatically showing an optimized keyboard for this field. Setting the type equal to 'url' will have a similar effect</p>
+
+<form action="http://www.example.org/profile.php">
+    <p>Please enter your website address:</p>
+    <input type="url" name="website" required="required"/>
+    <input type="submit" value="Submit" />
+</form>
+
+<form action="http://www.example.org/subscribe.php">
+    <p>Please enter your email address:</p>
+    <input type="email" name="email" required="required" />
+    <input type="submit" value="Submit" />
+</form>
+
+
+<h1>HTML5 Search input</h1>
+<p> setting the type attribute to 'search' will creaet a single line text box for search queries. On any text input field it is also possible to use an attribute called 'placeholder'  in order to have placeholder text taht dissappears when the user clicks on it</p>
+<form action="http://www.example.org/search.php">
+    <p>Search:</p>
+    <input type="search" name="search" placeholder="Enter you search term here" />
+    <input type="submit" value="Search" />
+</form>
+
+
+</body>
 </html>
