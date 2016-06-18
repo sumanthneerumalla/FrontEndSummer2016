@@ -3,7 +3,8 @@
     <title>Extra Html Markup</title>
 </head>
 <body>
-    <h1>Extra Html Markup</h1>
+    <div>
+        <h1>Extra Html Markup</h1>
     <dl>
         <dt>Doctypes</dt>
         <dd>Because of the different html standards that are out there, it is recommended to insert html doctypes at the beginning of an html document so that browsers can render the html page properly based on the standards that were used to write the html page</dd>
@@ -22,8 +23,15 @@
         <dt>Grouping text and elements inline</dt>
         <dd>The 'span' element acts like the inline equivalent of the div element. its used to contain a section of text where there is no other suitable  element to differentiate it from surrounding text or to contain a number of inline elements.</dd>
         <dt> iframe</dt>
-        <dd>iframes allow users to access content of other webpages within the same page. Within an iframe, the src attribute specifies the url of the page to show in the frame, and the 'height' and 'width' attributes set the dimentions of the iframe in pixels. the scrolling attribute, which indicates whether or not the iframe should have a scroll bar, is not supported in HTML5 but is in html4. The 'frameborder' also is not supported in html5 but is in html4. Setting it equal to 0 indicates no border but a value of 1 indicates a border. In html5 a new attribute called seamless where scrollbars are not desired.</dd>
-    </dl>
+        <dd>iframes allow users to access content of other webpages within the same page. Within an iframe, the src attribute specifies the url of the page to show in the frame, and the 'height' and 'width' attributes set the dimentions of the iframe in pixels. the scrolling attribute, which indicates whether or not the iframe should have a scroll bar, is not supported in HTML5 but is in html4. The 'frameborder' also is not supported in html5 but is in html4. Setting it equal to 0 indicates no border but a value of 1 indicates a border. In html5 a new attribute called seamless where scrollbars are not desired</dd>
+        <dt>Giving information abot pages by using the 'meta' tag </dt>
+        <dd>The meta element lives inside the head of the document and contains information about the page. Its not visible to users but gives information that is used by search engines. The attributes in the meta tag are often in the 'name' and 'content' format. Common names used are 'description', 'keywords', and 'robots'. The meta element also uses the 'http-equiv' attribute set to 'author', 'pragma' and 'expires' attributs to add more information . For each value of http-equiv respectively, the content is either the name of the author of the page, 'no-cache' if the page shouldn't be cached by search engines, and the expiration time. </dd>
+        <dt>Escape characters</dt>
+        <dd>In order to render characters that are otherwise reserved for html code, it is necessary to use excape characters. They are denoted by the &amp sign and then the name of the character that is to be displayed.</dd>
+        </dl>
+    </div>
+
+<iframe width="425" height="275" frameborder="0" scrolling="no" marginheight="0" marginwidth="0'" src="http://maps.google.com/maps?f=q&amp;sources_q&amp;geocode=&amp;q=charing+cross+road+london&amp;output=embed"></iframe>
 </body>
 
 </html>
