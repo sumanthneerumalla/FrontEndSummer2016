@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Using CSS</title>
+    <link href="CSSBasics.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <h1>Using External CSS</h1>
     <p>The 'link' element is placed inside the head of the HTML document to tell the browser where to find the css file that is used to style the page. Its an empty element with an href attribute linking to the location of the css file, a 'type' attribute that should be set to the value of 'text/css' and a 'rel' attribute that specifies the relationship between the HTML page and the file it is linked to. The 'rel' attribute should be set to 'stylesheet' when linking to a css file.</p>
+
+    <h1>Internal CSS</h1>
+    <p>It is also possible to insert CSS directly in the HTML document. It is not preferred since it make sit more difficult to change the style of the HTML document later on, but it does work when you need to style just individual HTML pages.</p>
+    <ul>
+        <li><a href="InternalCSS.html">Click here to vist a webpage that uses Internal CSS</a> </li>
+        <li><a href=""></a> </li>
+    </ul>
+
+    <p style="color: blanchedalmond;"> Believe it or not, its even possible to style individual elements should you find yourself needng to. Read the source code for this paragraph element to see for yourself</p>
 
 </body>
 </html>
