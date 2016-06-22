@@ -8,10 +8,21 @@
 <body>
     <h1>The Three Ways of Denoting Color</h1>
     <ul>
-        <li>RGB Values:  These express colors in terms of how much red, green, and blue are used to make it up. Example: rgb(100,100,90)</li>
-        <li>Hex Codes: These are six-digit codes that represent the amount of red breen and blue in a color, preceded by a '#' character. Example : #ee3e80</li>
-        <li>Color Names:There are 147 predefined color names that are recognized by browsers. I have used several in the previous chapter. Example: DarkCyan</li>
+        <li><b>RGB Values</b>:  These express colors in terms of how much red, green, and blue are used to make it up.<span class="example"> Example: rgb(100,100,90)</span></li>
+        <li><b>Hex Codes</b>: These are six-digit codes that represent the amount of red breen and blue in a color, preceded by a '#' character. <span class="example">Example : #ee3e80</span></li>
+        <li><b>Color Names</b>:There are 147 predefined color names that are recognized by browsers. I have used several in the previous chapter. <span class="example">Example: DarkCyan</span></li>
     </ul>
-    <p>CSS3 has also introduced another way to denote color called HSLA which will be covered later</p>
+    <p>CSS3 has also introduced another way to denote color called HSLA which is covered below</p>
+
+<h1> Background Color</h1>
+<p>CSS treats each element as if its in a box, and the background color by default of each element is set to be transparent</p>
+
+<h1> CSS3 Color Features</h1>
+<ul>
+    <li><b>Opacity</b>: CSS3 adds an opacity property, which allows you to define how transparent an element will be. You can set this to be any value between 0.0 and 1.0. A value of 0.5 translates to 50% opacity and a value of 0.15 translates to 15% opacity.</li>
+    <li><b>RGBA</b>: This method of defining color allows you to define color just like an RGB value but adds a fourth value to indicate opacity. <span class="example">Example : 'rgba(0,0,0,0.5)'</span> Since not all browsers rgba, it is a good practice to first define color using RGB, but then following it with the rgba value. Newer browsers will use rgba if its available, and older browsers will fall back to the rgb value that you provide.</li>
+    <li><b>HSL Colors</b>:Specifies color using <em> Hue, Saturation, and Lightness</em> values. Its honestly a little too long for me to want to explain but you can learn more about it directly from the <a href="http://htmlandcssbook.com">book</a> on pages 253, 255 and 256</li>
+</ul>
+
 </body>
 </html>
