@@ -1,0 +1,24 @@
+/* Comments in CSS are inserted into CSS like this */
+
+/* by default browsers set the background color to be white, but that can be changed by using CSS */
+body {
+ background-color: rgb(200,200,200);
+}
+
+
+
+/*This is how you define color by using the color name */
+h1 {
+    color: DarkCyan;
+}
+
+/* Inserting color by using hex code */
+li {
+    color: #ee3e80
+}
+
+/* Inserting color using rgb */
+p {
+    color:rgb(100,100,90);
+}
+
