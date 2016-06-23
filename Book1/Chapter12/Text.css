@@ -1,28 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 * {
     font-family: 'Raleway', sans-serif;}
+body{
+    font-family: Georgia,serif;
+}
 h1 {
     color: forestgreen;
+    font-family: Arial,sans-serif;
 }
 i{
-    color:green;
-}
-i{
-    color:red;
-}
-b {
-    color:pink;
-}
-p b { color: blue !important;
-}
-p b {
-    color:violet;
-}
-p#intro {
-    font-size: 100%
-}
-p{
-    font-size: 100%;
+    color:darkorchid;
 }
 .Source {
     border: 1px solid #665544;
@@ -32,6 +19,6 @@ p{
     font-size: 150%;
     font-family: "Courier New" ,monospace;
 }
-.Source h1{
-    padding:inherit;
+.element{
+    color:darkred;
 }

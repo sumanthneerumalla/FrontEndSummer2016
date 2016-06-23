@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Text</title>
+    <link href="Text.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <h1>Specifying Typefaces</h1>
-<p>The font family property allows you to </p>
+<p>The font family property allows you to specify the typeace that should be used for any text inside the element to which a CSS rule applies. Typically the user has to have the specified typeface installed but there are way to import unavailable typefaces from within the CSS document itself. Its good practice to end with a generic font name for the type of font you would like. <i>If a font name is made up of more than one word it should be put in double quotes. It is also good practice to not use more than 3 typefaces on a singe page</i></p>
+<div class="Source">
 
+</div>
+<h1>Font Size</h1>
+<p> There are three different ways to specify the size of a font</p>
+<ul>
+    <li>Pixels: The number of of pixels followed by the letters px. <span class="element">Example: "font-size:12px;"</span></li>
+    <li>Percentages: The default size of text is 16px. Using <span class="element">"font-size: 200%;</span> will result in a font size of 32px. Using <span class="element">'font-size: 150%;'</span> on an element that is a child of that element will result in a font of 48px </li>
+    <li>Ems: An 'em' is equivalent to the width of a letter m.</li>
+</ul>
 </body>
 </html>
