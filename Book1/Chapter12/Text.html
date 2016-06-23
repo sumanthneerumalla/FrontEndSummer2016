@@ -9,7 +9,11 @@
 <h1>Specifying Typefaces</h1>
 <p>The font family property allows you to specify the typeace that should be used for any text inside the element to which a CSS rule applies. Typically the user has to have the specified typeface installed but there are way to import unavailable typefaces from within the CSS document itself. Its good practice to end with a generic font name for the type of font you would like. <i>If a font name is made up of more than one word it should be put in double quotes. It is also good practice to not use more than 3 typefaces on a singe page</i></p>
 <div class="Source">
-
+    @font-face {
+    font-family: 'ChunkFiveRegular';
+    src: url('fonts/chunkfive.eot');}
+    h1, h2 {
+    font-family: ChunkFiveRegular, Georgia, serif;}
 </div>
 <h1>Font Size</h1>
 <p> There are three different ways to specify the size of a font</p>
@@ -18,5 +22,19 @@
     <li>Percentages: The default size of text is 16px. Using <span class="element">"font-size: 200%;</span> will result in a font size of 32px. Using <span class="element">'font-size: 150%;'</span> on an element that is a child of that element will result in a font of 48px </li>
     <li>Ems: An 'em' is equivalent to the width of a letter m.</li>
 </ul>
+
+<h1>Importing Fonts</h1>
+<p>Using <span class="element">"@font-face"</span> in Css allows you to use a font that is not on the users computer. The <span class="element">'font-family'</span> property specifies the name of the fotn that will be used in the rest of the style sheet. The <span class="element">'src'</span>property specifies the path to the font. The <span class="element">'format'</span>  property specifies the format that the font is supplied in.<i>Different browsers support different formats for fonts so different formats must be supplied to reach all browsers</i></p>
+<div class="Source">
+    @font-face {
+    font-family: 'ChunkFiveRegular';
+    src: url('fonts/chunkfive.eot');
+    src: url('fonts/chunkfive.eot?#iefix') format('embedded-opentype'),
+    url('fonts/chunkfive.woff') format('woff'),
+    url('fonts/chunkfive.ttf') format('truetype'),
+    url('fonts/chunkfive.svg#ChunkFiveRegular') format('svg');}
+    h1, h2 {
+    font-family: ChunkFiveRegular, Georgia, serif;}
+</div>
 </body>
 </html>
