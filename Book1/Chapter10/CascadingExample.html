@@ -6,6 +6,68 @@
     <link href="CascadingExample.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+<h1>How CSS Rules Cascade</h1>
+<ul>
+    <li><a href="#LastRule"> Last Rule</a></li>
+    <li><a href="#Specificity">Specificity</a></li>
+    <li><a href="#Exceptions!">Exceptions</a></li>
+</ul>
+
+
+<div class="Source">
+<h1>CSS Source for this page</h1>
+    @import url(https://fonts.googleapis.com/css?family=Raleway);<br><br>
+    * {<br>
+    font-family: 'Raleway', sans-serif;}<br>
+    h1 {<br>
+    color: forestgreen;<br>
+    }<br><br>
+    i{<br>
+    color:green;<br>
+    }<br><br>
+    i{<br>
+    color:red;<br>
+    }<br><br>
+    b {<br>
+    color:pink;<br>
+    }<br><br>
+    p b {<br>
+    color: blue !important;<br>
+    }<br><br>
+    p b {<br>
+    color:violet;<br>
+    }<br><br>
+    p#intro {<br>
+    font-size: 100%<br>
+    }<br><br>
+    p{<br>
+    font-size: 100%;<br>
+    }<br><br>
+    .Source {<br>
+    border: 1px solid #665544;<br>
+    background-color: #efefef;<br>
+    color: hotpink;<br>
+    padding: 10px;<br>
+    }<br><br>
+    .Source h1{<br>
+    padding:inherit;<br>
+    }<br><br>
+</div>
+
+<h1 id="LastRule">Last Rule</h1>
+<p>If the two selectors are identical the latter of the two will take precedence</p>
+<h1 id="Specificity"> Specificity</h1>
+<p>If one selector is more specific than others the more specific rule takes precedence over general ones</p>
+<ul>
+    <li> h1 is more specific than *</li>
+    <li> p b is more specific than p</li>
+    <li>p#intro is more specific than p</li>
+</ul>
+<h1 id="Exceptions!">Exceptions</h1>
+<p>You can add <i>!important</i> after any property value to indicate that it should be considered <b>more important</b> than any other previously declared rules for that element.</p>
+
+<h1>Inheritance</h1>
+<p>Some properties are inherited automatically from higher order elements. For example, setting the font family in the body element will meant that it automatically gets inhertied by the headings and paragraphs. Other properties, like 'background-color' aren't inherited by default. They can be forcefully inherited from parent elements by declaring the property and setting its value to 'inherit' </p>
 
 </body>
 </html>

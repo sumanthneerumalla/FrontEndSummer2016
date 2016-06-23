@@ -1,8 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 * {
-    font-family:Arial,Verdana,sans-serif;
-}
+    font-family: 'Raleway', sans-serif;}
 h1 {
-    font-family: "Courier New",monospace;
+    color: forestgreen;
 }
 i{
     color:green;
@@ -22,5 +22,16 @@ p#intro {
     font-size: 100%
 }
 p{
-    font-size: 75%;
+    font-size: 100%;
+}
+.Source {
+    border: 1px solid #665544;
+    background-color: #efefef;
+    color: blue;
+    padding: 10px;
+    font-size: 150%;
+    font-family: "Courier New" ,monospace;
+}
+.Source h1{
+    padding:inherit;
 }
