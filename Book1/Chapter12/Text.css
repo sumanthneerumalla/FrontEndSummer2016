@@ -15,12 +15,17 @@ i{
     border: 1px solid #665544;
     background-color: #efefef;
     color: blue;
-    padding: 30px;
+    padding: 10px;
     font-size: 150%;
     font-family: "Courier New" ,monospace;
     white-space: pre-wrap;
-
+}
+.Source h1{
+    font-size: 90%;
 }
 .element{
     color:darkred;
+}
+#leading{
+    line-height: 2em;
 }

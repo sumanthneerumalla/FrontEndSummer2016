@@ -10,10 +10,10 @@
 <p>The font family property allows you to specify the typeace that should be used for any text inside the element to which a CSS rule applies. Typically the user has to have the specified typeface installed but there are way to import unavailable typefaces from within the CSS document itself. Its good practice to end with a generic font name for the type of font you would like. <i>If a font name is made up of more than one word it should be put in double quotes. It is also good practice to not use more than 3 typefaces on a singe page</i></p>
 <div class="Source">
     @font-face {
-    font-family: 'ChunkFiveRegular';
-    src: url('fonts/chunkfive.eot');}
-    h1, h2 {
-    font-family: ChunkFiveRegular, Georgia, serif;}
+font-family: 'ChunkFiveRegular';
+src: url('fonts/chunkfive.eot');}
+h1, h2 {
+font-family: ChunkFiveRegular, Georgia, serif;}
 </div>
 <h1>Font Size</h1>
 <p> There are three different ways to specify the size of a font</p>
@@ -26,6 +26,7 @@
 <h1>Importing Fonts</h1>
 <p>Using <span class="element">"@font-face"</span> in Css allows you to use a font that is not on the users computer. The <span class="element">'font-family'</span> property specifies the name of the fotn that will be used in the rest of the style sheet. The <span class="element">'src'</span>property specifies the path to the font. The <span class="element">'format'</span>  property specifies the format that the font is supplied in.<i>Different browsers support different formats for fonts so different formats must be supplied to reach all browsers</i></p>
 <div class="Source">
+    <h1>Browser Compatibility Issues are a Pain</h1>
     @font-face {
     font-family: 'ChunkFiveRegular';
     src: url('fonts/chunkfive.eot');
@@ -36,5 +37,36 @@
     h1, h2 {
     font-family: ChunkFiveRegular, Georgia, serif;}
 </div>
+
+<h1>Font-Weight and Font-Style</h1>
+<p>The <span class="element">'font-weight'</span> and <span class="element">'font-style'</span> properties allow you to make certain elements to be 'normal'/'bold' and 'normal'/'italic'/'oblique</p>
+<div class="Source">
+    .credits {
+    font-weight: bold;
+    font-style: italic;}
+
+    .title {
+    font-weight: normal;
+    font-style: italic;}
+</div>
+
+<h1>Upper and Lower Case</h1>
+<p>The <span class="element">'text-transform'</span> element is used to change the text of an aelement to <span class="element">'uppercase'</span>, <span class="element">'lowercase'</span>, or <span class="element">'capitalize'</span>.Setting the <span class="element">'text-transform'</span> element to <span class="element">'capitalize'</span> capitalizes the first letter of each word</p>
+
+<h1>Underline&Strike</h1>
+<p> The <span class="element">'text-decoration'</span>can be set to
+    <ul>
+    <li><span class="element">'none'</span>: Removes any decoration already applied to the text </li>
+    <li><span class="element">'underline'</span>:<span style="text-decoration: underline">Underlines</span> the text</li><br>
+    <li><span class="element">'overline'</span>:Adds a line <span style="text-decoration: overline">over the top of the text</span> </li><br>
+    <li><span class="element">'line-through'</span>:<span style="text-decoration: line-through">adds a line through the text</span> </li><br>
+    <li><span class="element">'blink'</span>:<span style="text-decoration: blink">Makes the text blink</span></li>
+    </ul>
+</p>
+
+<h1>Leading</h1>
+<p id="leading"><span class="element">'line-height'</span> is an property that is used to set the vertical space between the lines of text. Pronounced "ledding", it is defined by typographers as the distance between the highest part of the lower line of text and the lowest part of the higher line of text. It is good practice to set the value in <span class="element">'em'</span> so that users can adjust the default size of their text in their browser and have the value of <span class="element">'line-height'</span> scale automatically.<i>You may have noticed that this paragraph is set to a value of 2 ems</i>
+    <quote>Interesting Fact: The difference between the font-size and line-height is equal to the leading.</quote>
+</p>
 </body>
 </html>
