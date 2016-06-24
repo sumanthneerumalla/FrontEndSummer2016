@@ -68,5 +68,130 @@ font-family: ChunkFiveRegular, Georgia, serif;}
 <p id="leading"><span class="element">'line-height'</span> is an property that is used to set the vertical space between the lines of text. Pronounced "ledding", it is defined by typographers as the distance between the highest part of the lower line of text and the lowest part of the higher line of text. It is good practice to set the value in <span class="element">'em'</span> so that users can adjust the default size of their text in their browser and have the value of <span class="element">'line-height'</span> scale automatically.<i>You may have noticed that this paragraph is set to a value of 2 ems</i>
     <quote>Interesting Fact: The difference between the font-size and line-height is equal to the leading.</quote>
 </p>
+
+<h1>Letter & Word Spacing</h1>
+<p id="spacing">Kerning is the term for the space between ech letter. This can be controlled with the <span class="element">'letter-spacing'</span> element. The <span class="element">'word-spacing'</span> element can also be used to change the spacing between words. By default word spcing is set to 0.25em.</p>
+
+
+<h1>Alignment</h1>
+<p>The <span class="element">'text-align'</span> property allows you to control the alignment of text. It can be set to <ul>
+    <li style="text-align: left;">'left' to align text to left side</li>
+    <li style="text-align: right;">'right' to alight text to the right side</li>
+    <li style="text-align: center;">'center' to center the text</li>
+    <li style="text-align: justify;">'justify' to make every line but the last take up the full width of the containing box.</li>
+</ul>
+    </p>
+
+<h1>Vertical Alignment</h1>
+<p>The <span class="element">'vertical-align'</span> property is typically used to align text with inline elements such as <span class="element">'em'</span>, or  <span class="element">'img'</span>, or <span class="element">'strong'</span></p>
+
+
+<h1>Indenting Text</h1>
+<p>The <span class="element">'text-indent'</span> property allows you to indent the first line of text within an element. The amount to indent is usually doen in px or em.
+    <ul>
+    <li style="text-indent: 30px">Text can be indented to the right with positive values</li>
+    <li style="text-indent: -20px ">Text can also be indented to the left</li>
+    <li style="text-indent: -90px">So much so that the text can go off screen</li>
+    </ul>
+</p>
+
+<h1>CSS3 Drop Shadows</h1>
+<p>
+    The <span class="element">'text-shadow'</span> property is used to create a drop shadow behind words. It can also be used to create an embossed effect by adding a shadow that is slightly lighter than the text. There are four values for this property:
+    <ol>
+        <li>The first value specifies how far left or right the shadow should fall</li>
+        <li>The second value specifies how far up or down the shadow should fall</li>
+        <li>The third value is optoinal, but determines the amount of blur that should be applied to the shadow</li>
+        <li>The fourth value is the color of the drop shadow</li>
+    </ol>
+</p>
+<div class="Source">
+    <h1>Sample CSS</h1>
+    <div id="one">#one {
+    background-color: #eeeeee;
+    color: #666666;
+    text-shadow: 1px 1px 0px #000000;}</div>
+    <div id="two">#two {
+    background-color: #dddddd;
+    color: #666666;
+    text-shadow: 1px 1px 3px #666666;}</div>
+    <div id="three">    #three {
+        background-color: #cccccc;
+        color: red;
+        text-shadow: 1px 30px 7px red;}</div>
+    <div id="four">#four {
+    background-color: #bbbbbb;
+    color: #cccccc;
+    text-shadow: -1px -2px #666666;}</div>
+    <div id="five">#five {
+    background-color: #aaaaaa;
+    color: #ffffff;
+    text-shadow: -1px -1px #666666;</div>
+</div>
+
+<h1>First Letter or Line</h1>
+<p>The <span class="element">':first-letter'</span> and <span class="element">':first-line'</span> properties are <b>pseudo-elements</b> because they come directly afterthe end of the CSS selector </p>
+<div class="Source">
+    <h1>CSS Source</h1>
+    p.intro:first-letter {
+    font-size: 200%;}
+
+    p.intro:first-line {
+    font-weight: bold;}</div>
+
+<h1>Styling Links</h1>
+<p>The <span class="element">':link'</span> and <span class="element">':visited'</span> are considered <b>pseudo-classes</b> that allow you to set styles for links that have and have not been visited yet.</p>
+<div class="Source">
+
+    a:link {
+    color: deeppink;
+    text-decoration: none;}
+
+    a:visited {
+    color: black;}
+
+    a:hover {
+    color: deeppink;
+    text-decoration: underline;}
+
+    a:active {
+    color: darkcyan;}
+
+</div>
+
+<h1>Responding to users with :hover, :active, and :focus</h1>
+<form>
+    <input type="text" class="text" value="Enter email address..." />
+    <input type="submit" class="submit" />
+</form>
+<p>The :hover, :active, and :focus pseudo-classes are used to change the appearance of elements when a user is interacting with them. :hover applies when the mouse is above the element.: active is for when the user clicks the element. This is often used to make it look like the button is actually being pressed when the user presses down on their mouse.<i>It should be kept in mind that the pseudo classes must always appear in the following order:</i></p>
+<ol>
+    <li>:link</li>
+    <li>:visited</li>
+    <li>:hover</li>
+    <li>:focus</li>
+    <li>:active</li>
+</ol>
+<div class="Source">
+    <h1>CSS Source</h1>
+    input {
+    padding: 6px 12px 6px 12px;
+    border: 1px solid #665544;
+    color: #ffffff;}
+
+    input.submit:hover {
+    background-color: #665544;}
+
+    input.submit:active {
+    background-color: chocolate;}
+
+    input.text {
+    color: #cccccc;}
+
+    input.text:focus {
+    color:#665544;}
+</div>
+
+
 </body>
 </html>
