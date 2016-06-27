@@ -1,0 +1,26 @@
+body{
+    background-color: beige;
+    text-align: center;
+}
+
+p {
+    border: 1px solid brown ;
+    padding: 10px;
+    margin: 5px;
+}
+
+#limit{
+    min-width: 20%;
+    max-width: 70%;
+}
+
+#overflowing{
+    overflow: scroll;
+    max-height:100px;
+}
+
+#centering{
+    width: 500px;
+    margin: 10px auto 10px auto;
+    text-align: inherit;
+}

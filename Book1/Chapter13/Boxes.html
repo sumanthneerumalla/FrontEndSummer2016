@@ -6,17 +6,30 @@
     <link href="Boxes.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<h1>Box Dimensions</h1>
+<h1 id="dimensions">Box Dimensions</h1>
 <p>By default a box is sized just large enough to the hold the contents inside of it. This can be customized with the 'width' and 'height' properties. The most popular values are given in pixels, but it can also be done in percentages. When percentages are used, the percentage refers to the dimensions of the page, or applies to the size of the box that the box specified is nested within. When 'em's are used, the size of the box is defined by the size of the text. Percentages and 'em's are being used more and more often in order to provide responsive design to different-sized screens.</p>
 
+<div id="limit">
 <h1>Limiting Width and Height</h1>
-<p>some pages expand and shrink to fid the size of the users screen. The 'min-width' and 'min-height' properties allow you to set the smallest size that a box can be. The 'max-width' and 'max-height' properties allow you to specify the largest size a box can be. Sometimes due to dimensional restrictions, text inside the boxes may overflow out of their boxes and overlap with the contents of other boxes. This can be handled with the 'overflow' property</p>
+<p>Some pages expand and shrink to fid the size of the users screen. The 'min-width' and 'min-height' properties allow you to set the smallest size that a box can be. The 'max-width' and 'max-height' properties allow you to specify the largest size a box can be. Sometimes due to dimensional restrictions, text inside the boxes may overflow out of their boxes and overlap with the contents of other boxes. This can be handled with the 'overflow' property</p>
+</div>
+
 
 <h1>Overflowing Content</h1>
-<p>The 'overflow' property tells the browser what to do when the content of a box overflows its boundaries. When set equal to 'hidden', the browser will just simply hide the content that cannot fit inside of the box. When set to 'scroll', the browser will add a scrollbar to the box so that users can see the missing content.</p>
-
+<div id="overflowing">
+<p>The 'overflow' property tells the browser what to do when the content of a box overflows its boundaries. When set equal to 'hidden', the browser will just simply hide the content that cannot fit inside of the box. When set to 'scroll', the browser will add a scrollbar to the box so that users can see the missing content.
+<br>
+    <i>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</i>
+</p>
+</div>
 <h1>Border, Margin, and Padding</h1>
 <p>Most borders are by default set to invisible in HTML. Margins are the space outside the border, and padding is the space between the border and the content in the box. The three are important to consider because when borders contact each other without any margin, they look twice as thick and can lead to a bad whitespace on a web page. The border can quickly be customized with a single property called 'border'. The first value is the borders thickness, the second is the style (dotted, dashes, etc..), and the third is the color.</p>
+<div id="centering">
+<h1>Centering</h1>
+<p>Setting the right and left margins to 'auto' will make the browser automatically center the box in the middle of the width of the page. This heading and paragraph have been given a width of 500px to make sure they dont extend all the way to the edges of the page.</p>
+</div>
 
+<h1>Changing Inline/Block</h1>
+<p>The 'display' property allows you to turn an inline element into a block-level element or vice versa.</p>
 </body>
 </html>
