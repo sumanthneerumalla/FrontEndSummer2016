@@ -1,0 +1,55 @@
+#one{
+    list-style-type: circle;
+}
+
+#two{
+    list-style-type: lower-alpha;
+
+}
+
+#three{
+    list-style-image: url("http://htmlandcssbook.com/code-samples/chapter-14/images/star.png");
+}
+
+.Source {
+    border: 1px solid #665544;
+    background-color: #efefef;
+    color: blue;
+    padding: 0px 0px 5px 30px;
+    font-size: 150%;
+    font-family: "Courier New" ,monospace;
+    white-space: pre-wrap;
+    min-width: 30%;
+    max-width: 70%;
+    margin: 0px auto 0px auto;
+}
+.Source h1{
+    font-size: 90%;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+h1 {
+    color: forestgreen;
+    font-family: Arial,sans-serif;
+}
+#readableTable{
+}
+table {
+    width: 600px;
+    margin:0px auto 0px auto;
+}
+th, td {
+    padding: 7px 10px 10px 10px;}
+th {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 90%;
+    border-bottom: 2px solid #111111;
+    border-top: 1px solid #999;
+    text-align: left;}
+tr.even {
+    background-color: #efefef;}
+tr:hover {
+    background-color: #c3e6e5;}
+.money {
+    text-align: right;}
