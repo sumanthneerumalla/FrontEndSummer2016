@@ -24,3 +24,17 @@ p {
     margin: 10px auto 10px auto;
     text-align: inherit;
 }
+li  {
+    display: inline;
+    font-weight: bold;
+    color: brown;
+}
+
+#rounded{
+    border: 5px  solid darkred;
+    border-radius: 50px;
+    width: 500px;
+    margin: 10px auto 10px auto;
+
+
+}
