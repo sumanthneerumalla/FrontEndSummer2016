@@ -53,3 +53,7 @@ tr:hover {
     background-color: #c3e6e5;}
 .money {
     text-align: right;}
+p{
+    cursor:crosshair;
+}
+body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat927.ani), url(http://cur.cursors-4u.net/nature/nat-10/nat927.png), progress !important;}
